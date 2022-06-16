@@ -17,13 +17,43 @@
           <li><a href="/usuario/alunoindex.html">Voltar</a></li>
 
         </ul>
-      </nav>    
-        <div class="alunoindex">
-            <p>ATUALIZAR CADASTRO</p><br><br>
-
-            ATUALIZAR CADASTRO
-        </div>
-
+        <main class="alunoindex">
+          <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Cliente</button>
+          <table id="tableClient" class="records">
+              <thead>
+                  <tr>
+                      <th>Nome</th>
+                      <th>E-mail</th>
+                      <th>Celular</th>
+                      <th>Cidade</th>
+                      <th>Ação</th>
+                  </tr>
+              </thead>
+              <tbody>
+  
+              </tbody>
+          </table>
+          <div class="modal" id="modal">
+              <div class="modal-content">
+                  <header class="modal-header">
+                      <h2>Atualizar</h2>
+                      <span class="modal-close" id="modalClose">&#10006;</span>
+                  </header>
+                  <form id="form" class="modal-form">
+                      <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Aluno"
+                          required>
+                      <input type="email" id="email" class="modal-field" placeholder="e-mail " required>
+                      <input type="text" id="celular" class="modal-field" placeholder="Celular " required>
+                      <input type="text" id="cidade" class="modal-field" placeholder="Cidade " required>
+                  </form>
+                  <footer class="modal-footer">
+                      <button id="salvar" class="button green">Salvar</button>
+                      <button id="cancelar" class="button blue">Cancelar</button>
+                  </footer>
+              </div>
+          </div>
+      </main>
+      <script src="/js/usuario/atualizarcad.js" defer></script>
        
 </body>
 </html>
