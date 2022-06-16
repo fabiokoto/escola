@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aluno.css">
     <link rel="stylesheet" href="/css/alunoindex.css">
-    <title>Constula Academica - Faltas</title>
+    <title>Constula Academica - Provas</title>
 </head>
 <body>
   
@@ -19,11 +19,18 @@
         </ul>
       </nav>    
         <div class="alunoindex">
-            <p>Consultar Faltas</p><br><br>
-
-            AQUI COLOCAR AS FALTAS QUE O ALUNO POSSUIR
-
+            <p>Consultar suas faltas</p><br>
         </div>
+
+        Digite o que quer buscar:
+        <br>
+        <input type="text" id="texto" value="Digite sua Id">
+        <br>
+        <input type="button" value="Buscar" onclick="buscar()">
+        
+        <div id="resultado"></div>
+        
+        <script src="/js/usuario/consultafaltas.js"></script>
 
 </body>
 </html>
