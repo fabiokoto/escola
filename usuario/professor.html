@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/aluno.css">
     <link rel="stylesheet" href="/css/alunoindex.css">
+    <link rel="stylesheet" href="/css/contatoprofessor.css">
     <title>Fale com seu Professor</title>
 </head>
 <body>
@@ -15,15 +16,34 @@
         <ul>
           <li><a class="active" href="index.html">Home</a></li>
           <li><a href="/aluno.html">Voltar</a></li>
-
         </ul>
+        
       </nav>    
-        <div class="alunoindex">
-            <p>Fale com seu Professor</p><br><br>
-
-            AQUI COLOCAR TIPO UM CHAT PRA FALAR COM O PROFESSOR
-
+     
+      <form action="">
+        <h1>Fale com o seu Professor</h1>
+        <div class="area-input">
+          <label for="">Nome Completo</label>
+          <input type="text" >
         </div>
+        <div class="area-input">
+          <label for="">E-mail</label>
+          <input type="text" >
+        </div>
+        <div class="area_input">
+          <label for="">Mensagem</label>
+          <textarea name="mensagem" id="mensagem" cols="37" rows="12"></textarea>
+        </div>
+        <button onclick="enviar()">Enviar</button>
 
+      </form>
+      
 </body>
+
+<script>
+  function enviar(){
+    alert("Sua mensagem foi enviada!")
+  }
+
+</script>
 </html>
