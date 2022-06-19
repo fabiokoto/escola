@@ -18,12 +18,47 @@
 
         </ul>
       </nav>    
-        <div class="alunoindex">
-            <p>Notas</p><br><br>
+        
 
-            AQUI COLOCAR AS NOTAS. 
+            <main class="alunoindex">
+              <button type="button" class="button blue mobile" id="cadastrarCliente">Cadastrar Aluno</button>
+              <table id="tableClient" class="records">
+                  <thead>
+                      <tr>
+                          <th>Nome</th>
+                          <th>Materia</th>
+                          <th>Nota</th>
+                          <th>Faltas</th>
+                          <th></th>
+                      </tr>
+                  </thead>
+                  <tbody>
+      
+                  </tbody>
+              </table>
+              <div class="modal" id="modal">
+                  <div class="modal-content">
+                      <header class="modal-header">
+                          <h2>Atualizar</h2>
+                          <span class="modal-close" id="modalClose">&#10006;</span>
+                      </header>
+                      <form id="form" class="modal-form">
+                          <input type="text" id="nome" data-index="new" class="modal-field" placeholder="Nome do Aluno"
+                              required>
+                          <input type="text" id="materia" class="modal-field" placeholder="materia " required>
+                          <input type="text" id="nota" class="modal-field" placeholder="nota " required>
+                          <input type="text" id="faltas" class="modal-field" placeholder="faltas " required>
+                      </form>
+                      <footer class="modal-footer">
+                          <button id="salvar" class="button green">Salvar</button>
+                          <button id="cancelar" class="button blue">Cancelar</button>
+                      </footer>
+                  </div>
+              </div>
+          </main>
+          <script src="/js/admin/cadastrarnotaefaltas.js" defer></script>
 
-        </div>
+        
         
 
 </body>
