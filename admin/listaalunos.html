@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/aluno.css">
-    <link rel="stylesheet" href="../css/alunoindex.css">
+    <link rel="stylesheet" href="../css/listaluno.css">
     <title>Lista de Alunos</title>
 </head>
 <body>
@@ -18,12 +18,12 @@
 
         </ul>
       </nav>    
-        <div class="alunoindex">
+        
             <p>Lista de Alunos</p><br><br>
 
-            <button onclick="buscar()">Listar</button>
-            <span id="root"></span><br>
-        </div>
+            <div><button onclick="buscar()">Listar</button></div>
+            <div class="result"><span id="root"></span><br></div>
+       
         
         <script src="../js/admin/listaaluno.js"></script>
 </body>

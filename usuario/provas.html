@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/aluno.css">
-    <link rel="stylesheet" href="../css/alunoindex.css">
+    <link rel="stylesheet" href="../css/provas.css">
     <title>Constula Academica - Provas</title>
 </head>
 <body>
@@ -22,13 +22,14 @@
             <p>Consultar datas de Provas</p><br>
         </div>
 
-        Digite o que quer buscar:
-        <br>
-        <input type="text" id="texto" value="Digite sua Id">
-        <br>
-        <input type="button" value="Buscar" onclick="buscar()">
         
-        <div id="resultado"></div>
+        <div><h2>Digite o que quer buscar:</h2></div>
+        <br>
+        <div><input type="text" id="texto" value="Digite sua Id"></div>
+        <br>
+        <div><input type="button" value="Buscar" onclick="buscar()"></div>
+        
+        <div class="result" id="resultado">
         
         <script src="../js/usuario/consultadatas.js"></script>
 

@@ -1,0 +1,28 @@
+body{
+    background-color: antiquewhite;
+}
+
+
+
+
+div tr th{
+    justify-content: center;
+    display: inline-block;
+}
+p{
+    font-weight: bold;
+    justify-content: center;
+    display: flex;
+    color: black;
+}
+h2{
+    justify-content: center;
+    display: inline-block;
+}
+div.result{
+    justify-content: center;
+    display: inline-block;
+}
+input.button{
+    justify-content: center;
+}
